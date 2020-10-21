@@ -29,8 +29,8 @@
             <nav>
                 <ul>
                     <li><a href="#">home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Learn to code</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.w3schools.com/">Learn to code</a></li>
                     <li><a href="#">Social</a></li>
                     <li><a href="#">Latest News</a></li>
                     <li><a href="#">About us</a></li>
@@ -50,11 +50,11 @@
                     <img src="images/logo_with_icon (1)(copy).png" alt="" height="46" width="177">
                     <span id="closer"> &times; </span>
                     <h1>SIGN UP</h1>
-                    <!-- <label for="username">Username</label> -->
+                    <label for=""> Username</label> <br>
                     <input type="text" name="username" id="" placeholder="Username"> 
-                    <!-- <label for="email">Email</label> -->
+                    <label for="">Email</label> <br>
                     <input type="email" name="Email" id="" placeholder="Email adress">
-                    <label for="password">Password</label>
+                    <label for="">Password</label> <br>
                     <input type="password" name="Password" id="" show="text">
                     <br>
                     <button type="submit">Sign up</button> <br> 
@@ -92,11 +92,11 @@
             where ideas come to life
         </p>
         <form action="" method="GET">
-            <input type="text" placeholder="ask a code question">  
+            <input type="text" placeholder="ask a question">  
             <input type="submit" value="search" class="submit">
         </form>
     </div>
-    <div class="courses">
+    <!-- <div class="courses">
         <h1>Courses:</h1>
         <br>
         <br>
@@ -132,6 +132,34 @@
             <br>
             <a href="#">Start learning javascript</a>
         </div>
+    </div> -->
+    
+    <div class="contact_form" id="contact">
+        <h3>   CONTACT US </h3>
+        <form action="" method="post">
+            <img src="images/logo_with_icon (1)(copy).png" alt="Programmers connect logo" height="26.28" width="101.14">
+             <br> <br>
+            <label for="text">Your name</label> <br> <br>
+            <input type="text" name="" id="" placeholder="Your Name"> <br> <br>
+            <label for="Email">Your Email</label> <br> <br>
+            <input type="Email" name="" id="" placeholder="please enter a valid Email adress"> <br> <br>
+            <label for="message"> Message </label> <br> <br>
+            <!-- <input type="text"> -->
+            <textarea name="" id="" cols="40" rows="10" placeholder="Draft your message"></textarea> <br> <br>
+            <button type="submit">Send message </button>
+        </form>
+    </div>
+    <div class="about" id="about">
+        <img src="images/logo_from_instagram.jpg" alt="">
+        <p>
+            <span>About Us</span> <br> <br> 
+            Programmers connect is a social network <br>
+            built for programmers.It is built on <br>
+            the idea that the field of programming <br>
+            would be easier if programmers were to <br>
+            Connect.
+
+        </p>
     </div>
  <script src="home_page.js"></script>
 </body>
