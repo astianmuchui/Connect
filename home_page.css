@@ -131,10 +131,17 @@ header nav ul li .btn1 a:hover{
         top: 0;
     }
     .slogan{
-        font-size: 30px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         padding: 200px 0 200px 760px;
         text-transform: capitalize;
+        position: relative;
+        animation-name: animationOne;
+        animation-duration: 4s;
+        animation-delay: -1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
     }
     .slogan a{
         padding: 10px;
@@ -143,9 +150,33 @@ header nav ul li .btn1 a:hover{
         border: 1px solid black;
         margin: 0 0 0 0;
         background-color: black;
+        opacity: 0;
         border-radius: 3px;
         font-family: fantasy;
-        font-size: 13px;
+        font-size: 16px;
+        position: relative;
+        animation-name: button;
+        animation-duration: 2s;
+        animation-delay: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        transition-property: transform;
+        transition-duration: 1s;
+        transition-delay: 0s;
+    }
+    @keyframes button{
+        0%{opacity: 0; border-radius: 100%;}
+        25%{border-radius: 100%;}
+        50%{border-radius: 50%; opacity: 0.5; transform: scale(0.1); font-size: 17px;}
+        100%{opacity: 1; border-radius: 1%; transform: scale(1.5);}
+    }
+    @keyframes animationOne{
+        0%{font-size: 4px;}
+        25%{font-size: 8px;}
+        50%{font-size: 12px;}
+        75%{font-size: 16px;}
+        100%{font-size: 25px;}
     }
     .slogan button a{
         background-color: transparent;
@@ -153,7 +184,7 @@ header nav ul li .btn1 a:hover{
         padding: 10px;
         text-decoration: none;
         color: black;
-        border: 1px solid black;
+        border: 2px solid black;
         margin: 0 0 0 0;
         font-family: fantasy;
         font-size: 30px;
@@ -206,16 +237,26 @@ header nav ul li .btn1 a:hover{
         margin-left: 90px;
         font-size: 40px;
         color: darkred;
+        position: relative;
     }
     #paragraph_two i{
         margin-left: 40px;
         font-size: 40px;
         color: whitesmoke;
+        position: relative;
     }
     #paragraph_four i{
         margin-left: 60px;
         font-size: 40px;
         color: whitesmoke;
+        position: relative;
+    }
+    #paragraphs i:hover{
+        animation-name: fontAwesome;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
     }
      #paragraphs form{
         padding-top: 80px;
@@ -251,6 +292,9 @@ header nav ul li .btn1 a:hover{
     .paragraphs i:hover{
         transform: scale(1.05);
         color: red;
+    }
+    @keyframes fontAwesome{
+        100%{transform: rotate(180deg);}
     }
     /* .courses{
         height: 400px;
@@ -517,4 +561,13 @@ header nav ul li .btn1 a:hover{
         font-family: 'Amita';
         font-size: 20px;
         text-decoration: underline 2px solid #f33e41;
+    }
+    .footer{
+        height: 100px;
+        width: 100%;
+        background-color: black;
+    }
+    .footer img{
+        width: 200px;
+        height: 200px;
     }
