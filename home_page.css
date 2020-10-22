@@ -168,8 +168,8 @@ header nav ul li .btn1 a:hover{
     @keyframes button{
         0%{opacity: 0; border-radius: 100%;}
         25%{border-radius: 100%;}
-        50%{border-radius: 50%; opacity: 0.5; transform: scale(0.1); font-size: 17px;}
-        100%{opacity: 1; border-radius: 1%; transform: scale(1.5);}
+        50%{border-radius: 50%; opacity: 0.5; transform: scale(1.5); font-size: 17px;}
+        100%{opacity: 1; border-radius: 1%; transform: scale(1);}
     }
     @keyframes animationOne{
         0%{font-size: 4px;}
