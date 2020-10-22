@@ -1,6 +1,8 @@
 body{
     background-color: black;
     margin: 0;
+    /* color: white; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow-x: hidden;
 }
 /* Globals */
@@ -11,6 +13,7 @@ button{
     background-color: transparent;
     color: white;
 }
+
 html{
     scroll-behavior: Animatable;
 }
@@ -537,13 +540,14 @@ header nav ul li .btn1 a:hover{
     .contact_form label{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    .about{
+    /* .about{
         background-color: whitesmoke;
         height: 250px;
         width: 100%;
         border: 2px solid whitesmoke;
         display: inline-flex;
         padding: 30px;
+        color: black;
     }
     .about img{
         border-radius: 3.142cm;
@@ -561,13 +565,23 @@ header nav ul li .btn1 a:hover{
         font-family: 'Amita';
         font-size: 20px;
         text-decoration: underline 2px solid #f33e41;
-    }
+    } */
     .footer{
-        height: 100px;
+        height: 50px;
         width: 100%;
+        margin-top: 30px;
+        margin-left: 30%;
         background-color: black;
     }
-    .footer img{
-        width: 200px;
-        height: 200px;
+    .footer a{
+        color: red;
+        /* margin: 0 auto; */
+        border: none;
+    }
+    .terms{
+        text-align: center;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
     }
