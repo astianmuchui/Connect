@@ -299,7 +299,7 @@ header nav ul li .btn1 a:hover{
     @keyframes fontAwesome{
         100%{transform: rotate(180deg);}
     }
-    /* .courses{
+ .courses{
         height: 400px;
         background-color: white;
         display: inline-flex;
@@ -369,7 +369,7 @@ header nav ul li .btn1 a:hover{
         background-color: #000000;
         opacity: 0.7;
         color: white;
-    } */
+    } 
     .modal{
         padding-top: 140px;
         background-color: rgba(0,0,0,0.2);
